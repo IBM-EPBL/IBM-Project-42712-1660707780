@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ uri }}/Anime.ico">
+    <link rel="stylesheet" href="{{ uri }}/style.css">
+    <title>Neco-Arc Hospital</title>
+</head>
+<body>
+    <div class="flex-container">
+        <img id="neco" src="{{ uri }}/neco.webp" alt="burenyuu" type="image/webp">
+        <h1>Neco-Arc Hospital</h1>
+    </div>
+    <br>
+    <br>
+    <img src="{{ uri }}/hospital.gif" alt="girl">
+    <p>Hi! You can find the nearest hospital branches by using our Chat Assistant :)</p>
+    <br>
+    <br>
+    <div class="flex-container">
+        <img id="doctor" src="{{ uri }}/doctor.jpg" alt="doctor" type="image/jpeg">
+        <img id="nurse" src="{{ uri }}/nurse.webp" alt="nurse" type="image/webp">  
+    </div>
+    <p>We have the best in class nurses and doctors dealing with wide ranges and demography of patients with the utmost care we can provide!</p>
+    <br>
+    <br>
+    <p>CopyLeft 2022 Neco-Arc Corporation Ltd.</p>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "691054e8-4102-4137-8e27-0783b29dafd4", // The ID of this integration.
+          region: "jp-tok", // The region your integration is hosted in.
+          serviceInstanceID: "3de5d3e2-6032-43d8-978a-b029696d0b3d", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+</body>
+</html>

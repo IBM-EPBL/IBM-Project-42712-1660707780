@@ -1,0 +1,18 @@
+#img-border-round {
+    border-radius: 10%;
+}
+
+body {
+    background-color: rgb(202, 201, 201);
+}
+
+.progress {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+}
+
+.uwu {
+    margin-left: 10%;
+    margin-right: 10%;
+}
